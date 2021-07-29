@@ -1,0 +1,33 @@
+{
+  "name": "hiker-http-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:html\" \"npm:server\" \"npm:webpack\"",
+    "html": "puer -p 8000 -d ./public",
+    "server": "nodemon index.js",
+    "webpack": "webpack --config ./webpack.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "puer": "^2.0.2",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "etag": "^1.8.1",
+    "log4js": "^6.3.0"
+  }
+}
