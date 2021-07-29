@@ -5,7 +5,8 @@ html文件服务器为pure，js等资源文件和接口等server使用nodemon开
 js资源使用的是es6的语法，所以需要使用webpack+babel进行打包（babel把es6语法编译成commonjs语法，  webpack内部实现来一个loader来实现require加载）  
 ## 运行流程：
     `npm install`
-    `npm start`
+    `npm start`   
+    项目运行，自动在浏览器打开文件夹目录，点击index.html即可
 
 ## 复习知识内容：
 
